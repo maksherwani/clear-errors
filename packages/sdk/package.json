@@ -1,0 +1,53 @@
+{
+  "name": "@ahmedsherwani/clearerrors-sdk",
+  "version": "1.0.0",
+  "description": "Frontend SDK for translating API errors into user-friendly messages. No API keys required - completely free!",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "error-handling",
+    "error-translation",
+    "api-errors",
+    "user-friendly-errors",
+    "sdk",
+    "frontend",
+    "typescript",
+    "react",
+    "vue",
+    "angular"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maksherwani/clear-errors.git",
+    "directory": "packages/sdk"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@ahmedsherwani/clearerrors-core": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0"
+  },
+  "peerDependencies": {
+    "axios": "^1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "axios": {
+      "optional": true
+    }
+  }
+}
